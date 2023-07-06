@@ -153,7 +153,7 @@ module.exports = {
                             ...baseFieldConfig,
                             ...fieldTypeConfig,
                             value: value,
-                            "disabled": true
+                            static: true
                         }
                     }else if(['boolean'].includes(type)){
                         steedos_field = {
