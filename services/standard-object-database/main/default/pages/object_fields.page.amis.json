@@ -10,7 +10,7 @@
         "id": "u:b3d626885b90",
         "mode": "edit",
         "layout": "normal",
-        "enableTabs": "\nvar rows = payload?.query_result?.data?.rows;\nvar total_amount_array = rows.map((item) => {\n  return item.total_amount;\n})\nvar year_tag_array = rows.map((item) => {\n  return item.year_tag;\n})\nvar mongth_tag_array = rows.map((item) => {\n  return item.mongth_tag;\n})\npayload.data = {\n  total_amount: total_amount_array,\n  year_tag: year_tag_array,\n  mongth_tag: mongth_tag_array,\n};\n// console.log('payload==>', payload)\nreturn payload;\n"
+        "enableTabs": true
       }
     ],
     "regions": [
@@ -22,10 +22,10 @@
         "rootUrl": "http://127.0.0.1:5000",
         "tenantId": "649cea1a1ce4c1b208763114",
         "userId": "620da7b6-6918-473e-90a7-f9b98425b09a",
-        "authToken": "1ee88b15b4623aea7710bbfaf06e4a57b19a7ef6ab22214bbe336c34c2a31ec54f7c1f98a634025089da7e"
+        "authToken": "0ece5ccfbaf9fe583489ed841c0efa557e236f64299b15150124e60c42e39ebf7ea296981037a77bf93f18"
       }
     },
     "name": "page_object_fields_form",
     "bodyClassName": "",
     "id": "u:6e9674f278b0"
-  }
+}
