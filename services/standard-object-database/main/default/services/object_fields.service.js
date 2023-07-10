@@ -117,7 +117,20 @@ module.exports = {
                         "clearValueOnHidden": true,
                         "fieldName": "defaultValue"
                     }
-                    if(['number','currency','percent'].includes(type)){
+                    if(_.isString(value) && value.indexOf('{')>-1){
+                        // 只读时值是公式就显示公式
+                        steedos_field = {
+                            "type": "control",
+                            "label": lng === 'zh-CN' ? "默认值" : 'DefaultValue',
+                            "body": {
+                                "name": "defaultValue",
+                                "label": lng === 'zh-CN' ? "默认值" : 'DefaultValue',
+                                "labelClassName": "text-left",
+                                "type": "tpl",
+                                "tpl": value.indexOf('$') > -1 ? "\\"+value : value
+                            }
+                        }
+                    }else if(['number','currency','percent'].includes(type)){
                         steedos_field = {
                             ...baseFieldConfig,
                             "type": "static-tpl",
@@ -192,10 +205,24 @@ module.exports = {
                         }
                     }
                 }
+                let body = [
+                    steedos_field
+                ]
+                if(mode === 'edit'){
+                    body[0].field.amis = {
+                        disabledOn: "!!this.defaultValue_formula"
+                    }
+                    body.push({
+                        "name": "defaultValue_formula",
+                        "label": "默认值公式",
+                        "evalMode": false,
+                        "type": "input-formula",
+                        "disabledOn": "!!this.defaultValue && !!this.defaultValue.toString()",
+                        "className": "defaultValue_field_formula"
+                    })
+                }
                 return {
-                    "body": [
-                        steedos_field
-                    ]
+                    body
                 }
             }
         }
