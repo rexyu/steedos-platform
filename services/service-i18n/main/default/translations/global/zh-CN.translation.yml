@@ -25,3 +25,55 @@ CustomLabels:
     generate_object_tabs:
       objects_tab: 对象选项卡
       objects_tab_title: 选择需要生成选项卡的对象
+  action_field_updates:
+    action_field_updates_form:
+      field_group_generalization: 通用
+      api_name: API 名称
+      display_name: 显示名称
+      object_name: 对象
+      update_object: 要更新的对象
+      update_name: 要更新的字段
+      new_field_value_type: 新字段值类型
+      formula: 公式
+      description: 描述
+      reevaluate_on_change: 字段更改后重新评估工作流规则
+      undirect: 触发对象触发器、工作流规则、字段验证规则 
+  cms_files:
+    upload:
+      upload: 上传
+      message_success: 上传成功
+  flows:
+    newimport:
+      import_process: 导入流程
+      file_select: 文件选择
+      file_upload: 文件上传
+      division: 分部
+    newexport:
+      export_process: 导出流程
+      alert: 请选择要导出的流程
+    standard_new:
+      new: 新建
+      new_flow: 新建流程
+      category: 分类
+      flow_name: 流程名
+      division: 分部
+      division_name: 分部名称
+      division_code: 分部代码
+      related_departments: 关联部门
+      modification_time: 修改时间
+      binding_objects: 绑定对象
+      enable_amis_forms: 启用amis表单
+    addFormFields:
+      add_fields: 添加字段
+      binding_objects: 绑定对象
+      application_form_fields: 申请单字段
+      field: 字段
+      required: 必填
+      set_fields: 设置字段
+      application_form_subform: 申请单子表
+      sequence: 序号
+      subform_name: 子表名称
+      show_heading: 显示标题
+      default_to_object_name: 默认为对象名称
+      displayed_fields: 显示的字段
+      set_subform: 设置子表
