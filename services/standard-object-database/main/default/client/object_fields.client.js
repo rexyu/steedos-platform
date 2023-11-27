@@ -210,3 +210,39 @@ Steedos.ObjectFieldManager.getSummaryFiltersOperation = function(field_type) {
   }
   return operations;
 };
+
+(function () {
+  try {
+      var styleCss = $(`<style>
+          .defaultValue_field div:first-child{
+              flex-grow: 1;
+          }
+          .defaultValue_field .defaultValue_field_formula{
+              // margin: 4px;
+          }
+          .defaultValue_field .defaultValue_field_formula .antd-Form-label{
+              visibility: hidden;
+          }
+
+          .defaultValue_field .defaultValue_field_formula_visible{
+              flex-grow: 1;
+          }
+          .defaultValue_field .defaultValue_field_formula_visible .antd-Form-label .antd-TplField{
+              visibility: visible;
+          }
+          .defaultValue_field .defaultValue_field_hidden{
+              display: none;
+          }
+          .defaultValue_field .defaultValue_field_formula_hidden{
+              flex-grow: 0;
+          }
+          .defaultValue_field .defaultValue_field_formula_hidden .antd-FormulaPicker-input{
+              display: none;
+          }
+
+      </style>`);
+      $("head").append(styleCss);
+  } catch (error) {
+      console.log(error);
+  }
+})();

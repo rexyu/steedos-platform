@@ -16,6 +16,7 @@
     "@steedos/filters": "2.5.20-beta.19",
     "@steedos/i18n": "2.5.20-beta.19",
     "@steedos/metadata-core": "2.5.20-beta.19",
-    "@steedos/metadata-registrar": "2.5.20-beta.19"
+    "@steedos/metadata-registrar": "2.5.20-beta.19",
+    "amis-formula": "^3.2.0"
   }
 }

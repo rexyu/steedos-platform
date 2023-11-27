@@ -4422,6 +4422,15 @@ aliyun-sdk@1.12.3:
     xml2js "0.4.4"
     xmlbuilder "^13.0.2"
 
+amis-formula@^3.2.0:
+  version "3.5.3"
+  resolved "https://registry.npmjs.org/amis-formula/-/amis-formula-3.5.3.tgz#5f0667426f27035b3cc1779a12445566cb7d5435"
+  integrity sha512-FhrW2E+u59EZBgreZdjgLnhBkWCBWskSojNy1VDtvBzH7SNhM+26lJwlYfdkObRyoJj/nf3Ia2kmoYszp2AMuQ==
+  dependencies:
+    lodash "^4.17.15"
+    moment "^2.19.4"
+    tslib "^2.3.1"
+
 ansi-escapes@^3.1.0, ansi-escapes@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
@@ -12720,7 +12729,7 @@ moment-timezone@^0.5.31:
   dependencies:
     moment ">= 2.9.0"
 
-"moment@>= 2.9.0", moment@^2.10.6, moment@^2.24.0, moment@^2.29.1:
+"moment@>= 2.9.0", moment@^2.10.6, moment@^2.19.4, moment@^2.24.0, moment@^2.29.1:
   version "2.29.4"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
   integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
